@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", event => {
   // console.log(app);
   const db = firebase.firestore();
 
-  //Query songs from albums in firebase db
+  //Query songs from albums in firebase db for albums
   const queen = db.collection('myAlbums').doc('Live Killers');
   const eagles = db.collection('myAlbums').doc('Their Greatest Hits');
   const michael = db.collection('myAlbums').doc('Thriller');
@@ -85,12 +85,25 @@ document.addEventListener("DOMContentLoaded", event => {
     })
   })
 
+  const mySongs = db.collection('mytop10').doc('topsongs');
+  mySongs.onSnapshot(doc => {
+    const mySongsData = doc.data();
+    mySongsData.songs.forEach((song) => {
+      console.log(song)
+    })
+  })
+
 })
 
 const albumBtn = document.querySelector('.album-btn');
 const top10 = document.querySelector('#album10');
 albumBtn.addEventListener('click', () => {
-  top10.classList.toggle('d-none')
+  top10.classList.toggle('d-none');
 
+  if (top10.classList.contains('d-none')) {
+    albumBtn.innerHTML = "Show Top 10 Albums"
+  } else {
+    albumBtn.innerHTML = "Hide Top 10 Albums"
+  }
 })
 

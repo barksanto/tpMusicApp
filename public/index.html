@@ -29,65 +29,79 @@
 
 <body>
   <h1>Hello Music World!</h1>
-  <div class="d-flex justify-content-center">
-    <h2> Top 10 Best Selling Albums & Top 5 Songs</h2>
-    <button type="button" class="btn btn-info album-btn">See Top 10 Albums</button>
-  </div>
-  <div id="album10">
-    <ol>
-      <li>
-        <div class="firstAlbum ">
-          <h1 class="album-name">Live Killers</h1>
-        </div>
-      </li>
-      <li>
-        <div class="secondAlbum">
-          <h1 class="album-name">Their Greatest Hits</h1>
-        </div>
-      </li>
-      <li>
-        <div class="thirdAlbum">
-          <h1 class="album-name">Thriller</h1>
-        </div>
-      </li>
-      <li>
-        <div class="fourthAlbum">
-          <h1 class="album-name">AC/DC</h1>
-        </div>
-      </li>
-      <li>
-        <div class="fifthAlbum">
-          <h1 class="album-name">Meat Loaf</h1>
-        </div>
-      </li>
-      <li>
-        <div class="sixthAlbum">
-          <h1 class="album-name">Pink Floyd</h1>
-        </div>
-      </li>
-      <li>
-        <div class="seventhAlbum">
-          <h1 class="album-name">Whitney Houston</h1>
-        </div>
-      </li>
-      <li>
-        <div class="eighthAlbum">
-          <h1 class="album-name">Bee Gees</h1>
-        </div>
-      </li>
-      <li>
-        <div class="ninthAlbum">
-          <h1 class="album-name">Fleetwood Mac</h1>
-        </div>
-      </li>
-      <li>
-        <div class="tenthAlbum">
-          <h1 class="album-name">Shania Twain</h1>
-        </div>
-      </li>
-    </ol>
+  <div id="albums">
+    <div class="d-flex justify-content-center mb-5">
+      <h2> Top 10 Best Selling Albums & Top 5 Songs</h2>
+      <button type="button" class="btn btn-info album-btn ml-2">Hide Top 10 Albums</button>
+    </div>
+
+    <div id="album10">
+      <ol>
+        <li>
+          <div class="firstAlbum ">
+            <h1 class="album-name">Live Killers</h1>
+          </div>
+        </li>
+        <li>
+          <div class="secondAlbum">
+            <h1 class="album-name">Their Greatest Hits</h1>
+          </div>
+        </li>
+        <li>
+          <div class="thirdAlbum">
+            <h1 class="album-name">Thriller</h1>
+          </div>
+        </li>
+        <li>
+          <div class="fourthAlbum">
+            <h1 class="album-name">AC/DC</h1>
+          </div>
+        </li>
+        <li>
+          <div class="fifthAlbum">
+            <h1 class="album-name">Meat Loaf</h1>
+          </div>
+        </li>
+        <li>
+          <div class="sixthAlbum">
+            <h1 class="album-name">Pink Floyd</h1>
+          </div>
+        </li>
+        <li>
+          <div class="seventhAlbum">
+            <h1 class="album-name">Whitney Houston</h1>
+          </div>
+        </li>
+        <li>
+          <div class="eighthAlbum">
+            <h1 class="album-name">Bee Gees</h1>
+          </div>
+        </li>
+        <li>
+          <div class="ninthAlbum">
+            <h1 class="album-name">Fleetwood Mac</h1>
+          </div>
+        </li>
+        <li>
+          <div class="tenthAlbum">
+            <h1 class="album-name">Shania Twain</h1>
+          </div>
+        </li>
+      </ol>
+    </div>
   </div>
 
+
+  <div id="my10songs">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="row justify-content-center">My Top 10 Songs</h2>
+          
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="./index.js"></script>
 
