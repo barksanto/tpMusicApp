@@ -1,0 +1,21 @@
+body{
+  margin: 0 auto;
+}
+
+.firstAlbum,.secondAlbum,.thirdAlbum,.fourthAlbum,
+.fifthAlbum,.sixthAlbum,.seventhAlbum,.eightAlbum,.ninthAlbum.tenthAlbum {
+  display: flex;
+  justify-content: space-around;
+}
+
+.song-name{
+  font-size: 1.2em;
+  background-color: rgb(36, 197, 238);
+  border: 1px solid grey;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.album-name{
+  font-size: 14px;
+}
