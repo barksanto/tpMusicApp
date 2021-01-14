@@ -3,22 +3,29 @@ body{
 }
 
 .firstAlbum,.secondAlbum,.thirdAlbum,.fourthAlbum,
-.fifthAlbum,.sixthAlbum,.seventhAlbum,.eightAlbum,.ninthAlbum.tenthAlbum {
+.fifthAlbum,.sixthAlbum,.seventhAlbum,.eighthAlbum,.ninthAlbum,.tenthAlbum {
   display: flex;
   justify-content: space-between;
+  background-color: grey;
+  padding-top: 5px;
 }
 
 .song-name{
   font-size: 1.2em;
-  background-color: rgb(36, 197, 238);
+  background-color: rgb(91, 70, 187);
   border: 1px solid grey;
   border-radius: 4px;
   text-align: center;
   width: 20%;
-  height: 100px;
+  color: #fff
 }
 
 .album-name{
   font-size: 14px;
   width: 100px;
 }
+
+// add click event if time
+/* #album10{
+  display:none;
+} */
