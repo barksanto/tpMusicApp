@@ -10,7 +10,15 @@ document.addEventListener("DOMContentLoaded", event => {
   const acdc = db.collection('myAlbums').doc('Back In Black');
   const meatLoaf = db.collection('myAlbums').doc('Bat Out of Hell');
   const pinkFloyd = db.collection('myAlbums').doc('The Dark Side of the Moon');
+  const whitney = db.collection('myAlbums').doc('The Bodyguard');
 
+
+  whitney.onSnapshot(doc => {
+    const whitneyData = doc.data();
+    whitneyData.songs.forEach((song) => {
+      document.querySelector('.seventhAlbum').insertAdjacentHTML('beforeend', `<h3 class="px-2 song-name">${song}</h3>`)
+    })
+  })
 
   pinkFloyd.onSnapshot(doc => {
     const pinkFloydData = doc.data();

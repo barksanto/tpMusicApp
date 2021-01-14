@@ -14,7 +14,8 @@ body{
   border: 1px solid grey;
   border-radius: 4px;
   text-align: center;
-  width: 150px;
+  width: 20%;
+  height: 100px;
 }
 
 .album-name{
