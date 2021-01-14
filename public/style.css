@@ -5,7 +5,7 @@ body{
 .firstAlbum,.secondAlbum,.thirdAlbum,.fourthAlbum,
 .fifthAlbum,.sixthAlbum,.seventhAlbum,.eightAlbum,.ninthAlbum.tenthAlbum {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .song-name{
@@ -14,8 +14,10 @@ body{
   border: 1px solid grey;
   border-radius: 4px;
   text-align: center;
+  width: 150px;
 }
 
 .album-name{
   font-size: 14px;
+  width: 100px;
 }

@@ -8,8 +8,24 @@ document.addEventListener("DOMContentLoaded", event => {
   const eagles = db.collection('myAlbums').doc('Their Greatest Hits');
   const michael = db.collection('myAlbums').doc('Thriller');
   const acdc = db.collection('myAlbums').doc('Back In Black');
+  const meatLoaf = db.collection('myAlbums').doc('Bat Out of Hell');
+  const pinkFloyd = db.collection('myAlbums').doc('The Dark Side of the Moon');
 
-  
+
+  pinkFloyd.onSnapshot(doc => {
+    const pinkFloydData = doc.data();
+    pinkFloydData.songs.forEach((song) => {
+      document.querySelector('.sixthAlbum').insertAdjacentHTML('beforeend', `<h3 class="px-2 song-name">${song}</h3>`)
+    })
+  })
+
+  meatLoaf.onSnapshot(doc => {
+    const meatLoafData = doc.data();
+    meatLoafData.songs.forEach((song) => {
+      document.querySelector('.fifthAlbum').insertAdjacentHTML('beforeend', `<h3 class="px-2 song-name">${song}</h3>`)
+    })
+  })
+
   acdc.onSnapshot(doc => {
     const acdcData = doc.data();
     acdcData.songs.forEach((song) => {
