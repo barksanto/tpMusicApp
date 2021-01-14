@@ -3,12 +3,13 @@ document.addEventListener("DOMContentLoaded", event => {
   // console.log(app);
   const db = firebase.firestore();
 
-  //Qeen album
+  //Query songs from albums in firebase db
   const queen = db.collection('myAlbums').doc('Live Killers');
   const eagles = db.collection('myAlbums').doc('Their Greatest Hits');
   const michael = db.collection('myAlbums').doc('Thriller');
   const acdc = db.collection('myAlbums').doc('Back In Black');
 
+  
   acdc.onSnapshot(doc => {
     const acdcData = doc.data();
     acdcData.songs.forEach((song) => {
