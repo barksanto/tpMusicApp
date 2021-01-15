@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", event => {
   queen.onSnapshot(doc => {
     const qData = doc.data();
     qData.songs.forEach((song) => {
-      document.querySelector('.firstAlbum').insertAdjacentHTML('beforeend', `<h3 class="px-2 song-name ml-2">${song}</h3>`);
+      document.querySelector('.firstAlbum').insertAdjacentHTML('beforeend', `<h3 class="px-2 song-name mx-1">${song}</h3>`);
     })
   })
 
@@ -89,7 +89,8 @@ document.addEventListener("DOMContentLoaded", event => {
   mySongs.onSnapshot(doc => {
     const mySongsData = doc.data();
     mySongsData.songs.forEach((song) => {
-      console.log(song)
+      const myList = document.querySelector('.my10songs');
+      myList.insertAdjacentHTML('beforeend', `<li class="px-2 my-song-name col-8 text-left">${song}</li>`);
     })
   })
 

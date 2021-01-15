@@ -20,8 +20,21 @@ body{
   color: #fff
 }
 
+.my-song-name{
+  font-size: 1.2em;
+  background-color: rgb(91, 70, 187);
+  border: 1px solid grey;
+  border-radius: 4px;
+  text-align: center;
+  width: 20%;
+  color: black
+}
+
 .album-name{
   font-size: 14px;
   width: 100px;
 }
 
+.my-list-item{
+  background-color: red;
+}
