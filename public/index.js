@@ -102,10 +102,25 @@ document.addEventListener("DOMContentLoaded", event => {
   const revRow = document.querySelector('.added-album-2');
   const revData = db.collection('newPurchase').doc('albums1');
 
+  const kidRow = document.querySelector('.added-album-3');
+  const kidData = db.collection('newPurchase').doc('albums2');
+
+  const alligatorRow = document.querySelector('.added-album-4');
+  const alligatorData = db.collection('newPurchase').doc('albums3');
+
+  const blueprintRow = document.querySelector('.added-album-5');
+  const blueprintData = db.collection('newPurchase').doc('albums4');
+
+  const newAlbumRows = [transRow, revRow, kidRow, alligatorRow, blueprintRow]
+  newAlbumRows.forEach((element) => {
+    element.classList.add('d-none');
+  })
+
   transData.onSnapshot(doc => {
     const trans = doc.data()
     if (trans.songs) {
       transRow.innerHTML = trans.songs
+      transRow.classList.remove('d-none');
     }
     return
   })
@@ -114,6 +129,34 @@ document.addEventListener("DOMContentLoaded", event => {
     const rev = doc.data()
     if (rev.songs) {
       revRow.innerHTML = rev.songs
+      revRow.classList.remove('d-none');
+    }
+    return
+  })
+
+  kidData.onSnapshot(doc => {
+    const kid = doc.data()
+    if (kid.songs) {
+      kidRow.innerHTML = kid.songs
+      kidRow.classList.remove('d-none');
+    }
+    return
+  })
+
+  alligatorData.onSnapshot(doc => {
+    const alligator = doc.data()
+    if (alligator.songs) {
+      alligatorRow.innerHTML = alligator.songs
+      alligatorRow.classList.remove('d-none');
+    }
+    return
+  })
+
+  blueprintData.onSnapshot(doc => {
+    const blueprint = doc.data()
+    if (blueprint.songs) {
+      blueprintRow.innerHTML = blueprint.songs
+      blueprintRow.classList.remove('d-none');
     }
     return
   })
