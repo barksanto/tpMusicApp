@@ -108,3 +108,14 @@ albumBtn.addEventListener('click', () => {
   }
 })
 
+const mySongBtn = document.querySelector('.my-songs-btn');
+const my10songs = document.querySelector('.my10songs');
+mySongBtn.addEventListener('click', () => {
+  my10songs.classList.toggle('d-none');
+
+  if (my10songs.classList.contains('d-none')) {
+    mySongBtn.innerHTML = "Show My Songs";
+  } else {
+    mySongBtn.innerHTML = "Hide My Songs";
+  }
+})

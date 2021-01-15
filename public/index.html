@@ -28,7 +28,7 @@
 </head>
 
 <body>
-  <h1>Hello Music World!</h1>
+  <h1 class="text-center">Hello Music World!</h1>
   <div id="albums">
     <div class="d-flex justify-content-center mb-5">
       <h2> Top 10 Best Selling Albums & Top 5 Songs</h2>
@@ -96,10 +96,12 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2 class="row justify-content-center">My Top 10 Songs</h2>
-        <ol class="my10songs row justify-content-center">
+        <div class="d-flex justify-content-center">
+          <h2>My Top 10 Songs</h2><br>
+          <button type="button" class="btn btn-info my-songs-btn ml-2">Hide My Songs</button>
+        </div>
 
-        </ol>
+        <ol class="my10songs row justify-content-center"></ol>
       </div>
     </div>
   </div>
