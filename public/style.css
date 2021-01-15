@@ -62,3 +62,18 @@ body{
   opacity: .8;
   /* width: 70vw; */
 }
+
+
+.album-btn-link{
+  padding: 10px;
+  background-color: blueviolet;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.go-to-albums{
+  color: white;
+}
+.go-to-albums:hover{
+  color: white;
+}

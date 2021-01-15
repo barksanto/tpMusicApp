@@ -143,12 +143,6 @@ function scrub(e) {
   video.currentTime = scrubTime;
 }
 
-function changeSize() {
-  console.log('clicked fullscreen');
-  playerVideo.style.width = `100vw`;
-  // playerVideo.style.height = `100vh`;
-}
-
 // Hook up event listeners
 video.addEventListener('click', togglePlay);
 video.addEventListener('play', updateButton);
@@ -168,7 +162,6 @@ progress.addEventListener('mousemove', () => mousedown && scrub(e));
 progress.addEventListener('mousedown', () => mousedown = true);
 progress.addEventListener('mouseup', () => mousedown = false);
 
-fullScreen.addEventListener('click', changeSize);
 
 const playBtns = document.querySelector('.play-btn');
 console.log(playBtns)
