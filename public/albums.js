@@ -27,7 +27,13 @@ document.addEventListener("DOMContentLoaded", event => {
     const deathcabData = doc.data();
     deathcabData.songs.forEach((song) => {
       document.querySelector('.new-album-1').insertAdjacentHTML(
-        'beforeend', `<li class="px-2 song-name new-card mx-1">${song}</li>`);
+        'beforeend',
+        `<div class="container pt-3">
+          <div class="row">
+            <li class="px-2 song-name new-card mx-1 col-6">${song}</li>
+            <i class="far fa-play-circle col-2"></i>
+          </div>
+         </div>`);
     })
   })
 
@@ -35,7 +41,13 @@ document.addEventListener("DOMContentLoaded", event => {
     const gillianData = doc.data();
     gillianData.songs.forEach((song) => {
       document.querySelector('.new-album-2').insertAdjacentHTML(
-        'beforeend', `<li class="px-2 song-name new-card mx-1">${song}</li>`);
+        'beforeend', `
+        <div class="container pt-3">
+          <div class="row">
+            <li class="px-2 song-name new-card mx-1 col-6">${song}</li>
+            <i class="far fa-play-circle col-2"></i>
+            </div>
+         </div>`);
     })
   })
 
@@ -43,7 +55,13 @@ document.addEventListener("DOMContentLoaded", event => {
     const jayZData = doc.data();
     jayZData.songs.forEach((song) => {
       document.querySelector('.new-album-3').insertAdjacentHTML(
-        'beforeend', `<li class="px-2 song-name new-card mx-1">${song}</li>`);
+        'beforeend', `
+        <div class="container pt-3">
+          <div class="row">
+           <li class="px-2 song-name new-card mx-1 col-6">${song}</li>
+           <i class="far fa-play-circle col-2"></i>
+           </div>
+         </div>`);
     })
   })
 
@@ -51,7 +69,13 @@ document.addEventListener("DOMContentLoaded", event => {
     const radioheadData = doc.data();
     radioheadData.songs.forEach((song) => {
       document.querySelector('.new-album-4').insertAdjacentHTML(
-        'beforeend', `<li class="px-2 song-name new-card mx-1">${song}</li>`);
+        'beforeend', `
+        <div class="container pt-3">
+          <div class="row">
+            <li class="px-2 song-name new-card mx-1 col-6">${song}</li>
+            <i class="far fa-play-circle col-2"></i>
+            </div>
+         </div>`);
     })
   })
 
@@ -59,10 +83,16 @@ document.addEventListener("DOMContentLoaded", event => {
     const spoonData = doc.data();
     spoonData.songs.forEach((song) => {
       document.querySelector('.new-album-5').insertAdjacentHTML(
-        'beforeend', `<li class="px-2 song-name new-card mx-1">${song}</li>`);
+        'beforeend', `
+          <div class="container pt-3">
+           <div class="row">
+            <li class="px-2 song-name new-card mx-1 col-6">${song}</li>
+             <i class="far fa-play-circle col-2"></i>
+             </div>
+             </div>`);
     })
   })
 
-  
+
 
 })
