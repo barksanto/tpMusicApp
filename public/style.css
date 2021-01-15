@@ -19,10 +19,11 @@ body{
 .fifthAlbum,.sixthAlbum,.seventhAlbum,.eighthAlbum,.ninthAlbum,.tenthAlbum {
   display: flex;
   justify-content: space-between;
-  background-color: #D2B3FF;
+  background-color: #ae7df8;
   padding-top: 5px;
   border: 2px solid black;
   margin-top: 2px;
+  opacity: .8;
 }
 
 .song-name{
