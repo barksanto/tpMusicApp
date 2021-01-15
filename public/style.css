@@ -4,11 +4,22 @@ body{
   /* background-repeat: no-repeat; */
 }
 
+.header-text{
+  font-family: 'Indie Flower', cursive;
+  margin-top: 20px;
+  font-size: 48px;
+}
+
+.ten-intro,
+.my-ten-text{
+  font-family: 'Indie Flower', cursive;
+}
+
 .firstAlbum,.secondAlbum,.thirdAlbum,.fourthAlbum,
 .fifthAlbum,.sixthAlbum,.seventhAlbum,.eighthAlbum,.ninthAlbum,.tenthAlbum {
   display: flex;
   justify-content: space-between;
-  background-color: #4B7F52;
+  background-color: #D2B3FF;
   padding-top: 5px;
   border: 2px solid black;
   margin-top: 2px;
@@ -22,6 +33,7 @@ body{
   text-align: center;
   width: 20%;
   color: #fff
+  opacity: .8;
 }
 
 .my-song-name{
@@ -41,6 +53,7 @@ body{
 }
 
 .my10songs{
-  background-color: #4B7F52;
+  background-color:#D2B3FF;
+  opacity: .8;
   /* width: 70vw; */
 }
