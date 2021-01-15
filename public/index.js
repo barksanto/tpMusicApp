@@ -102,10 +102,10 @@ document.addEventListener("DOMContentLoaded", event => {
   const radiohead = db.collection('toBuy').doc('Radiohead');
   const spoon = db.collection('toBuy').doc('Spoon');
 
-  const buySongsArry = [deathcab, gillian, jayZ, radiohead, spoon];
 
   //refactored to run operations one time - 
   //blocking point is that each set of songs will be inserted into different element
+  //const buySongsArry = [deathcab, gillian, jayZ, radiohead, spoon];
   // buySongsArry.forEach((album) => {
   //   album.onSnapshot(doc => {
   //     const data = doc.data();
@@ -118,37 +118,43 @@ document.addEventListener("DOMContentLoaded", event => {
   deathcab.onSnapshot(doc => {
     const deathcabData = doc.data();
     deathcabData.songs.forEach((song) => {
-      console.log(song);
+      document.querySelector('.new-album-1').insertAdjacentHTML(
+        'beforeend', `<li class="px-2 song-name new-card mx-1">${song}</li>`);
     })
   })
 
   gillian.onSnapshot(doc => {
     const gillianData = doc.data();
     gillianData.songs.forEach((song) => {
-      console.log(song);
+      document.querySelector('.new-album-2').insertAdjacentHTML(
+        'beforeend', `<li class="px-2 song-name new-card mx-1">${song}</li>`);
     })
   })
 
   jayZ.onSnapshot(doc => {
     const jayZData = doc.data();
     jayZData.songs.forEach((song) => {
-      console.log(song);
+      document.querySelector('.new-album-3').insertAdjacentHTML(
+        'beforeend', `<li class="px-2 song-name new-card mx-1">${song}</li>`);
     })
   })
 
   radiohead.onSnapshot(doc => {
     const radioheadData = doc.data();
     radioheadData.songs.forEach((song) => {
-      console.log(song);
+      document.querySelector('.new-album-4').insertAdjacentHTML(
+        'beforeend', `<li class="px-2 song-name new-card mx-1">${song}</li>`);
     })
   })
 
   spoon.onSnapshot(doc => {
     const spoonData = doc.data();
     spoonData.songs.forEach((song) => {
-      console.log(song);
+      document.querySelector('.new-album-5').insertAdjacentHTML(
+        'beforeend', `<li class="px-2 song-name new-card mx-1">${song}</li>`);
     })
   })
+
 })
 
 const albumBtn = document.querySelector('.album-btn');
