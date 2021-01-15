@@ -96,11 +96,11 @@ document.addEventListener("DOMContentLoaded", event => {
 
 
   // songs to buy form db
-  const deathcab = db.collection('toBuy').doc('Death Cab');
-  const gillian = db.collection('toBuy').doc('Gillian Welch');
-  const jayZ = db.collection('toBuy').doc('Jay-Z');
-  const radiohead = db.collection('toBuy').doc('Radiohead');
-  const spoon = db.collection('toBuy').doc('Spoon');
+  const deathcab = db.collection('toBuy').doc('Transatlanticism');
+  const gillian = db.collection('toBuy').doc('Time the Revelator');
+  const jayZ = db.collection('toBuy').doc('The Blueprint');
+  const radiohead = db.collection('toBuy').doc('Kid A');
+  const spoon = db.collection('toBuy').doc('Alligator');
 
 
   //refactored to run operations one time - 
