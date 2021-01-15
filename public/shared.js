@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", event => {
 
 
   const transBtn = document.querySelector('.transatlantacism-btn');
-  const transRow = document.querySelector('.added-album-1');
+
 
 
   const revelatorBtn = document.querySelector('.revelator-btn');
@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", event => {
   transBtn.addEventListener('click', () => {
     let data = { songs: "Transatlantacism" };
     let setDoc = db.collection('newPurchase').doc('albums').set(data);
-
   })
 
   revelatorBtn.addEventListener('click', () => {

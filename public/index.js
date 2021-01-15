@@ -96,7 +96,27 @@ document.addEventListener("DOMContentLoaded", event => {
 
 
   // songs to buy form db
+  const transRow = document.querySelector('.added-album-1');
+  const transData = db.collection('newPurchase').doc('albums')
 
+  const revRow = document.querySelector('.added-album-2');
+  const revData = db.collection('newPurchase').doc('albums1');
+
+  transData.onSnapshot(doc => {
+    const trans = doc.data()
+    if (trans.songs) {
+      transRow.innerHTML = trans.songs
+    }
+    return
+  })
+
+  revData.onSnapshot(doc => {
+    const rev = doc.data()
+    if (rev.songs) {
+      revRow.innerHTML = rev.songs
+    }
+    return
+  })
 
 })
 
@@ -123,3 +143,4 @@ mySongBtn.addEventListener('click', () => {
     mySongBtn.innerHTML = "Hide My Songs";
   }
 })
+
