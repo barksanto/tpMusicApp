@@ -9,6 +9,8 @@ body{
   justify-content: space-between;
   background-color: #4B7F52;
   padding-top: 5px;
+  border: 2px solid black;
+  margin-top: 2px;
 }
 
 .song-name{
@@ -29,7 +31,7 @@ body{
   text-align: center;
   width: 20%;
   color: #fff;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .album-name{
