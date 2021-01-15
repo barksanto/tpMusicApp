@@ -94,6 +94,61 @@ document.addEventListener("DOMContentLoaded", event => {
     })
   })
 
+
+  // songs to buy form db
+  const deathcab = db.collection('toBuy').doc('Death Cab');
+  const gillian = db.collection('toBuy').doc('Gillian Welch');
+  const jayZ = db.collection('toBuy').doc('Jay-Z');
+  const radiohead = db.collection('toBuy').doc('Radiohead');
+  const spoon = db.collection('toBuy').doc('Spoon');
+
+  const buySongsArry = [deathcab, gillian, jayZ, radiohead, spoon];
+
+  //refactored to run operations one time - 
+  //blocking point is that each set of songs will be inserted into different element
+  // buySongsArry.forEach((album) => {
+  //   album.onSnapshot(doc => {
+  //     const data = doc.data();
+  //     data.songs.forEach((song) => {
+  //       console.log(song)
+  //     })
+  //   })
+  // })
+
+  deathcab.onSnapshot(doc => {
+    const deathcabData = doc.data();
+    deathcabData.songs.forEach((song) => {
+      console.log(song);
+    })
+  })
+
+  gillian.onSnapshot(doc => {
+    const gillianData = doc.data();
+    gillianData.songs.forEach((song) => {
+      console.log(song);
+    })
+  })
+
+  jayZ.onSnapshot(doc => {
+    const jayZData = doc.data();
+    jayZData.songs.forEach((song) => {
+      console.log(song);
+    })
+  })
+
+  radiohead.onSnapshot(doc => {
+    const radioheadData = doc.data();
+    radioheadData.songs.forEach((song) => {
+      console.log(song);
+    })
+  })
+
+  spoon.onSnapshot(doc => {
+    const spoonData = doc.data();
+    spoonData.songs.forEach((song) => {
+      console.log(song);
+    })
+  })
 })
 
 const albumBtn = document.querySelector('.album-btn');
