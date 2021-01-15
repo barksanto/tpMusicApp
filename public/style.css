@@ -1,18 +1,19 @@
 body{
   margin: 0 auto;
+
 }
 
 .firstAlbum,.secondAlbum,.thirdAlbum,.fourthAlbum,
 .fifthAlbum,.sixthAlbum,.seventhAlbum,.eighthAlbum,.ninthAlbum,.tenthAlbum {
   display: flex;
   justify-content: space-between;
-  background-color: grey;
+  background-color: #4B7F52;
   padding-top: 5px;
 }
 
 .song-name{
   font-size: 1.2em;
-  background-color: rgb(91, 70, 187);
+  background-color: rgb(102, 83, 185);
   border: 1px solid grey;
   border-radius: 4px;
   text-align: center;
@@ -27,7 +28,8 @@ body{
   border-radius: 4px;
   text-align: center;
   width: 20%;
-  color: black
+  color: #fff;
+  font-weight: 800;
 }
 
 .album-name{
@@ -35,6 +37,7 @@ body{
   width: 100px;
 }
 
-.my-list-item{
-  background-color: red;
+.my10songs{
+  background-color: #4B7F52;
+  width: 70vw;
 }

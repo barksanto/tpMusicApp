@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", event => {
     const mySongsData = doc.data();
     mySongsData.songs.forEach((song) => {
       const myList = document.querySelector('.my10songs');
-      myList.insertAdjacentHTML('beforeend', `<li class="px-2 my-song-name col-8 text-left">${song}</li>`);
+      myList.insertAdjacentHTML('beforeend', `<li class="pl-4 my-song-name col-8 text-left">${song}</li>`);
     })
   })
 
