@@ -91,9 +91,11 @@ body{
 }
 
 .added-album-1,.added-album-2,.added-album-3,
-.added-album-4,.added-album-5{
+.added-album-4,.added-album-5 {
   list-style-type: none;
   font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  background-color: blueviolet;
 }
 
 .album-name{
