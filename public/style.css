@@ -24,11 +24,11 @@ body{
 .fifthAlbum,.sixthAlbum,.seventhAlbum,.eighthAlbum,.ninthAlbum,.tenthAlbum {
   display: flex;
   justify-content: space-between;
-  /* background-color: #ae7df8; */
+  /* background-color:red; */
   padding-top: 5px;
   border: 2px solid black;
   margin-top: 2px;
-  opacity: .8;
+  /* opacity: .8; */
   font-family: 'Roboto', sans-serif !important;
 }
 
