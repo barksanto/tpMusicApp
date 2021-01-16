@@ -77,3 +77,9 @@ body{
 .go-to-albums:hover{
   color: white;
 }
+
+#album10 > ol > li {
+  color: white;
+  background-color: blueviolet;
+  font-weight: 800;
+}

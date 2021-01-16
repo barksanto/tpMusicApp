@@ -49,6 +49,21 @@
       flex: 0;
       flex-basis: 50%;
     }
+
+    .go-to-home {
+      color: white;
+    }
+
+    .go-to-home:hover {
+      color: white;
+    }
+
+    .home-btn-link {
+      padding: 10px;
+      background-color: blueviolet;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
   </style>
 </head>
 
@@ -67,10 +82,12 @@
   </div>
 
   <div class="container">
-    <div class="row">
+    <div class="row justify-content-center">
       <h1 class="text-center header-text col-12">Hello Music World!</h1>
       <h2 class="text-center albums-header col-12">Let's buy some new Albums!</h2>
-      <a href="./index.html" class="text-center col-12">Back to Home</a>
+      <div class="home-btn-link">
+        <a href="./index.html" class="text-center col-12 go-to-home">Back to Home</a>
+      </div>
     </div>
   </div>
   <div class="buy-songs">
