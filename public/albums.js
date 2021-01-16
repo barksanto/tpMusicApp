@@ -30,10 +30,17 @@ document.addEventListener("DOMContentLoaded", event => {
         `<div class="container pt-3">
           <div class="row">
             <li class="px-2 song-name new-card mx-1 col-6">${song}</li>
-            <i class="far fa-play-circle col-2"></i>
+            <i class="far fa-play-circle col-2 play-btn"></i>
           </div>
          </div>`);
     })
+    let buttons = document.querySelectorAll('.play-btn');
+    if (buttons) {
+      buttons.forEach(button => {
+        console.log("button", button);
+        button.addEventListener("click", togglePlay);
+      });
+    }
   })
 
   gillian.onSnapshot(doc => {
@@ -48,6 +55,15 @@ document.addEventListener("DOMContentLoaded", event => {
             </div>
          </div>`);
     })
+
+    let buttons = document.querySelectorAll('.play-btn');
+    if (buttons) {
+      buttons.forEach(button => {
+        console.log("button", button);
+        button.addEventListener("click", togglePlay);
+      });
+    }
+
   })
 
   jayZ.onSnapshot(doc => {
@@ -62,6 +78,13 @@ document.addEventListener("DOMContentLoaded", event => {
            </div>
          </div>`);
     })
+    let buttons = document.querySelectorAll('.play-btn');
+    if (buttons) {
+      buttons.forEach(button => {
+        console.log("button", button);
+        button.addEventListener("click", togglePlay);
+      });
+    }
   })
 
   radiohead.onSnapshot(doc => {
@@ -76,6 +99,13 @@ document.addEventListener("DOMContentLoaded", event => {
             </div>
          </div>`);
     })
+    let buttons = document.querySelectorAll('.play-btn');
+    if (buttons) {
+      buttons.forEach(button => {
+        console.log("button", button);
+        button.addEventListener("click", togglePlay);
+      });
+    }
   })
 
   spoon.onSnapshot(doc => {
@@ -90,16 +120,18 @@ document.addEventListener("DOMContentLoaded", event => {
            </div>
           </div>`);
     })
+    let buttons = document.querySelectorAll('.play-btn');
+    if (buttons) {
+      buttons.forEach(button => {
+        console.log("button", button);
+        button.addEventListener("click", togglePlay);
+      });
+    }
   })
 
 })
 
-let test = document.querySelectorAll('.play-btn');
-test.forEach((btn) => {
-  console.log(btn)
-})
 
-test.forEach((btn) => { btn.addEventListener('click', () => { console.log('hello') }) })
 // get the elements
 const player = document.querySelector('.player');
 const video = player.querySelector('.viewer');
