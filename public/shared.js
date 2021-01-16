@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", event => {
 
   const newAlbumList = document.querySelector('.new-album-1');
 
+  // Pop up alert when new album is added
   function myFunction(albumName) {
     alert(`${albumName} was added to My New Albums on the home page!`);
   }

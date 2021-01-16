@@ -1,10 +1,6 @@
 body{
   margin: 0 auto;
-  /* background-image: url('https://images.unsplash.com/photo-1514190226263-0a4456a291f2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80'); */
   background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1518972559570-7cc1309f3229?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80');
-  /* background-repeat: no-repeat; */
-  
-
 }
 
 .header-text{

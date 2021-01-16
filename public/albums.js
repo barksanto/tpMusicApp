@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", event => {
   //   })
   // })
 
+  // These bloakc of code add albums from db to album page but addinng elements to selected divs
   deathcab.onSnapshot(doc => {
     const deathcabData = doc.data();
     deathcabData.songs.forEach((song) => {
@@ -40,7 +41,6 @@ document.addEventListener("DOMContentLoaded", event => {
     let buttons = document.querySelectorAll('.play-btn');
     if (buttons) {
       buttons.forEach(button => {
-        // console.log("button", button);
         button.addEventListener("click", togglePlay);
       });
     }
@@ -65,7 +65,6 @@ document.addEventListener("DOMContentLoaded", event => {
     let buttons = document.querySelectorAll('.play-btn');
     if (buttons) {
       buttons.forEach(button => {
-        // console.log("button", button);
         button.addEventListener("click", togglePlay);
       });
     }
@@ -92,7 +91,6 @@ document.addEventListener("DOMContentLoaded", event => {
 
     if (buttons) {
       buttons.forEach(button => {
-        // console.log("button", button);
         button.addEventListener("click", togglePlay);
       });
     }
@@ -116,7 +114,6 @@ document.addEventListener("DOMContentLoaded", event => {
     let buttons = document.querySelectorAll('.play-btn');
     if (buttons) {
       buttons.forEach(button => {
-        // console.log("button", button);
         button.addEventListener("click", togglePlay);
       });
     }
@@ -149,7 +146,7 @@ document.addEventListener("DOMContentLoaded", event => {
 })
 
 
-// get the elements
+// get the elements for the media player
 const player = document.querySelector('.player');
 const video = player.querySelector('.viewer');
 const progress = player.querySelector('.progress');
@@ -159,7 +156,7 @@ const skipButtons = player.querySelectorAll('[data-skip]');
 const ranges = player.querySelectorAll('.player__slider');
 const playerVideo = player.querySelector('.player__video');
 
-// play media code
+// play media if paused - pause if playing
 function togglePlay() {
   if (video.paused) {
     video.play();
@@ -167,17 +164,12 @@ function togglePlay() {
     video.pause();
   }
 }
-
-function updateButton() {
-  const icon = this.paused ? '►' : '❚ ❚';
-  toggle.textContent = icon;
-}
-
+//faster or slower media play speed
 function skip() {
   // console.log(this.dataset.skip);
   video.currentTime += parseFloat(this.dataset.skip);
 }
-
+//moves the yellow bar faster or slower depending on speed
 function handleRangeUpdate() {
   video[this.name] = this.value
   // console.log(this.value);
@@ -189,21 +181,14 @@ function handleProgress() {
   progressBar.style.flexBasis = `${percent}%`;
 }
 
-function scrub(e) {
-  // console.log(e)
-  const scrubTime = (e.offsetX / progress.offsetWidth) * video.duration;
-  video.currentTime = scrubTime;
-}
-
 // Hook up event listeners
 video.addEventListener('click', togglePlay);
 video.addEventListener('play', updateButton);
 video.addEventListener('pause', updateButton);
 video.addEventListener('timeupdate', handleProgress);
-
 toggle.addEventListener('click', togglePlay);
 
-skipButtons.forEach(button => button.addEventListener('click', skip));
+
 
 ranges.forEach(range => range.addEventListener('change', handleRangeUpdate));
 ranges.forEach(range => range.addEventListener('mousemove', handleRangeUpdate));
