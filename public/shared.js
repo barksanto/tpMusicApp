@@ -5,18 +5,17 @@ document.addEventListener("DOMContentLoaded", event => {
 
 
   const transBtn = document.querySelector('.transatlantacism-btn');
-
-
-
   const revelatorBtn = document.querySelector('.revelator-btn');
   const kidBtn = document.querySelector('.kid-btn');
   const alligatorBtn = document.querySelector('.alligator-btn');
   const blueprintBtn = document.querySelector('.blueprint-btn');
 
   const newAlbumList = document.querySelector('.new-album-1');
+  
   transBtn.addEventListener('click', () => {
     let data = { songs: "Transatlantacism" };
     let setDoc = db.collection('newPurchase').doc('albums').set(data);
+
   })
 
   revelatorBtn.addEventListener('click', () => {

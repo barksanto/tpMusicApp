@@ -74,6 +74,7 @@ body{
 .go-to-albums{
   color: white;
 }
+
 .go-to-albums:hover{
   color: white;
 }
@@ -82,4 +83,9 @@ body{
   color: white;
   background-color: blueviolet;
   font-weight: 800;
+}
+
+.added-album-1,.added-album-2,.added-album-3,
+.added-album-4,.added-album-5{
+  list-style-type: none;
 }
