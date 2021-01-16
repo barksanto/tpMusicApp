@@ -187,3 +187,5 @@ mySongBtn.addEventListener('click', () => {
   }
 })
 
+
+// add one of the top 10 songs to db
