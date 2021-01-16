@@ -30,14 +30,17 @@ document.addEventListener("DOMContentLoaded", event => {
         `<div class="container pt-3">
           <div class="row">
             <li class="px-2 song-name new-card mx-1 col-6">${song}</li>
-            <i class="far fa-play-circle col-2 play-btn"></i>
+            <span class="play-btn">
+              <i class="far fa-play-circle col-2"></i>
+              <i class="far fa-pause-circle"></i>
+            </span>
           </div>
          </div>`);
     })
     let buttons = document.querySelectorAll('.play-btn');
     if (buttons) {
       buttons.forEach(button => {
-        console.log("button", button);
+        // console.log("button", button);
         button.addEventListener("click", togglePlay);
       });
     }
@@ -51,7 +54,10 @@ document.addEventListener("DOMContentLoaded", event => {
         <div class="container pt-3">
           <div class="row">
             <li class="px-2 song-name new-card mx-1 col-6">${song}</li>
-            <i class="far fa-play-circle col-2 play-btn"></i>
+              <span class="play-btn">
+                <i class="far fa-play-circle col-2"></i>
+                <i class="far fa-pause-circle"></i>
+              </span>
             </div>
          </div>`);
     })
@@ -59,7 +65,7 @@ document.addEventListener("DOMContentLoaded", event => {
     let buttons = document.querySelectorAll('.play-btn');
     if (buttons) {
       buttons.forEach(button => {
-        console.log("button", button);
+        // console.log("button", button);
         button.addEventListener("click", togglePlay);
       });
     }
@@ -74,14 +80,19 @@ document.addEventListener("DOMContentLoaded", event => {
         <div class="container pt-3">
           <div class="row">
            <li class="px-2 song-name new-card mx-1 col-6">${song}</li>
-           <i class="far fa-play-circle col-2 play-btn"></i>
+            <span class="play-btn">
+              <i class="far fa-play-circle col-2"></i>
+              <i class="far fa-pause-circle"></i>
+            </span>
            </div>
          </div>`);
     })
     let buttons = document.querySelectorAll('.play-btn');
+    let buttons2 = document.querySelectorAll('.pause-btn')
+
     if (buttons) {
       buttons.forEach(button => {
-        console.log("button", button);
+        // console.log("button", button);
         button.addEventListener("click", togglePlay);
       });
     }
@@ -95,14 +106,17 @@ document.addEventListener("DOMContentLoaded", event => {
         <div class="container pt-3">
           <div class="row">
             <li class="px-2 song-name new-card mx-1 col-6">${song}</li>
-            <i class="far fa-play-circle col-2 play-btn"></i>
+              <span class="play-btn">
+                <i class="far fa-play-circle col-2"></i>
+                <i class="far fa-pause-circle"></i>
+              </span>
             </div>
          </div>`);
     })
     let buttons = document.querySelectorAll('.play-btn');
     if (buttons) {
       buttons.forEach(button => {
-        console.log("button", button);
+        // console.log("button", button);
         button.addEventListener("click", togglePlay);
       });
     }
@@ -116,14 +130,17 @@ document.addEventListener("DOMContentLoaded", event => {
           <div class="container pt-3">
            <div class="row">
             <li class="px-2 song-name new-card mx-1 col-6">${song}</li>
-             <i class="far fa-play-circle col-2 play-btn"></i>
+            <span class="play-btn">
+              <i class="far fa-play-circle col-2"></i>
+              <i class="far fa-pause-circle"></i>
+            </span>
            </div>
           </div>`);
     })
     let buttons = document.querySelectorAll('.play-btn');
     if (buttons) {
       buttons.forEach(button => {
-        console.log("button", button);
+        // console.log("button", button);
         button.addEventListener("click", togglePlay);
       });
     }
