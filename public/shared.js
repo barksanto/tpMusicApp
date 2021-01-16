@@ -13,13 +13,14 @@ document.addEventListener("DOMContentLoaded", event => {
   const newAlbumList = document.querySelector('.new-album-1');
 
   function myFunction(albumName) {
-    alert(`${albumName} was added to My Albums on the home page!`);
+    alert(`${albumName} was added to My New Albums on the home page!`);
   }
 
   transBtn.addEventListener('click', () => {
     let data = { songs: "Transatlantacism" };
     let setDoc = db.collection('newPurchase').doc('albums').set(data);
-    myFunction("Transatlantacism");
+    // myFunction("Transatlantacism");
+    myFunction("Transatlantacism")
   })
 
   revelatorBtn.addEventListener('click', () => {

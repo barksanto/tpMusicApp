@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", event => {
   // console.log(app);
   const db = firebase.firestore();
 
-
   const deathcab = db.collection('toBuy').doc('Transatlanticism');
   const gillian = db.collection('toBuy').doc('Time the Revelator');
   const jayZ = db.collection('toBuy').doc('The Blueprint');
