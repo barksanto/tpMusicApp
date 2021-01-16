@@ -24,17 +24,17 @@ body{
 .fifthAlbum,.sixthAlbum,.seventhAlbum,.eighthAlbum,.ninthAlbum,.tenthAlbum {
   display: flex;
   justify-content: space-between;
-  background-color: #ae7df8;
+  /* background-color: #ae7df8; */
   padding-top: 5px;
   border: 2px solid black;
   margin-top: 2px;
   opacity: .8;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif !important;
 }
 
 .song-name{
   font-size: 1.2em;
-  background-color: rgb(102, 83, 185);
+  background-color: #343A40;
   border: 1px solid grey;
   border-radius: 4px;
   text-align: center;
@@ -83,6 +83,7 @@ body{
   color: white;
 }
 
+/* first list on home page - song name divs */
 #album10 > ol > li {
   color: white;
   background-color: blueviolet;
@@ -93,5 +94,8 @@ body{
 .added-album-4,.added-album-5{
   list-style-type: none;
   font-family: 'Roboto', sans-serif;
-  background-color: blueviolet;
+}
+
+.album-name{
+  font-size: 20px;
 }
