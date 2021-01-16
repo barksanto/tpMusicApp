@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", event => {
         `<div class="container pt-3">
           <div class="row">
             <li class="px-2 song-name new-card mx-1 col-6">${song}</li>
-            <i class="far fa-play-circle col-2 play-btn"></i>
+            <i class="far fa-play-circle col-2"></i>
           </div>
          </div>`);
     })
@@ -88,15 +88,19 @@ document.addEventListener("DOMContentLoaded", event => {
            <div class="row">
             <li class="px-2 song-name new-card mx-1 col-6">${song}</li>
              <i class="far fa-play-circle col-2 play-btn"></i>
-             </div>
-             </div>`);
+           </div>
+          </div>`);
     })
   })
 
-
-
 })
 
+let test = document.querySelectorAll('.play-btn');
+test.forEach((btn) => {
+  console.log(btn)
+})
+
+test.forEach((btn) => { btn.addEventListener('click', () => { console.log('hello') }) })
 // get the elements
 const player = document.querySelector('.player');
 const video = player.querySelector('.viewer');
@@ -153,8 +157,8 @@ toggle.addEventListener('click', togglePlay);
 
 skipButtons.forEach(button => button.addEventListener('click', skip));
 
-ranges.forEach(range => range.addEventListener('change', handleRangeUpdate));
-ranges.forEach(range => range.addEventListener('mousemove', handleRangeUpdate));
+// ranges.forEach(range => range.addEventListener('change', handleRangeUpdate));
+// ranges.forEach(range => range.addEventListener('mousemove', handleRangeUpdate));
 
 let mousedown = false;
 progress.addEventListener('click', scrub);
@@ -163,8 +167,4 @@ progress.addEventListener('mousedown', () => mousedown = true);
 progress.addEventListener('mouseup', () => mousedown = false);
 
 
-const playBtns = document.querySelector('.play-btn');
-console.log(playBtns)
-playBtns.forEach((btn) => {
-  btn.addEventListener('click', togglePlay)
-})
+
